@@ -1,0 +1,86 @@
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-radius: 24px;
+    overflow: hidden;
+    height: 44px;
+  }
+
+  .search-bar input[type="text"] {
+    flex: 1;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+
+  .search-bar button {
+    padding: 10px 18px;
+    font-size: 16px;
+    color: #5f6368;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .search-bar button:hover {
+    color: #1a73e8;
+  }
+
+  .autocomplete-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .autocomplete-items {
+    position: absolute;
+    background-color: #fff;
+    border-top: none;
+    z-index: 1;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .autocomplete-item {
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .autocomplete-item:hover {
+    background-color: #f4f4f4;
+  }
+
+  /* CSS styles for the data container */
+  #dataContainer {
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-radius: 4px;
+    padding: 20px;
+  }
+
+  #dataContainer p {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }

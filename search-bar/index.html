@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="search-bar">
+    <input type="text" placeholder="Search Google or type a URL" id="searchInput">
+    <button type="submit">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path fill="#5f6368" d="M9 16.2c-3.96 0-7.2-3.24-7.2-7.2S5.04 1.8 9 1.8s7.2 3.24 7.2 7.2-3.24 7.2-7.2 7.2zm5.04-1.2l5.4 5.4-1.8 1.8-5.4-5.4v-.9l-.3-.3c-2.04 1.56-4.62 2.52-7.5 2.52C3.78 21.6 0 17.82 0 13.2S3.78 4.8 8.34 4.8c3 0 5.64 1.44 7.32 3.66l-.48.48-1.8-1.8.48-.48C15.72 3.54 12.96 2.4 10.14 2.4 5.1 2.4 1.2 6.3 1.2 11.4s3.9 9 9 9c4.14 0 7.56-3 8.28-6.9h-2.16c-.6 2.34-2.64 3.9-5.12 3.9-3 0-5.4-2.4-5.4-5.4s2.4-5.4 5.4-5.4c2.58 0 4.62 1.86 5.22 4.32l.3.9z"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="autocomplete-container">
+    <div id="autocompleteContainer" class="autocomplete-items"></div>
+  </div>
+
+  <div id="dataContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
