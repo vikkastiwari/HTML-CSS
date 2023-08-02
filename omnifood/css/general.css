@@ -160,7 +160,8 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   /* always put transition on original state */
-  transition: background-color 0.3s;
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
 }
 
 .btn--solid:link,
@@ -194,4 +195,8 @@ body {
 /* added important to make sure that property of this helper class is applied */
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+strong {
+  font-weight: 500;
 }
