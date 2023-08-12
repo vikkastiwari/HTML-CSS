@@ -494,7 +494,6 @@
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   border-radius: 11px;
   overflow: hidden;
-  height: 50rem;
 }
 
 .cta-text-box{
@@ -535,13 +534,24 @@
   font-family: inherit;
 }
 
-.cta-form input {
+.cta-form input,
+.cta-form select {
   width: 100%;
   padding: 1.2rem;
   font-size: 1.8rem;
   font-family: inherit;
+  color: inherit;
   border: none;
   background-color: #fdf2e9;
   border-radius: 9px;
   box-shadow: 0 1px 2px rgb(0, 0, 0, 0.10);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.6rem rgba(253, 242, 233, 0.5);
 }
