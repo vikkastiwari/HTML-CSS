@@ -140,6 +140,7 @@
     /* MOBILE NAVIGATION */
     .btn-mobile-nav {
         display: block;
+        z-index: 9;
     }
 
     .main-nav {
