@@ -36,3 +36,31 @@ allLinks.forEach((link) => {
         }
     });
 });
+
+// Sticky navigation
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+
+    if (ent.isIntersecting) {
+        document.body.classList.remove("sticky");
+    }else {
+      document.body.classList.add("sticky");
+    }
+  },
+  {
+    // In the viewport
+    root: null,
+    // event emits as soon as the 0% of hero section is inside the view port
+    threshold: 0,
+    // It's the reason we added height 80px in sticky header
+    // when sticky header comes into view it hides the element of height 80px 
+    // therefore we added -80px margin in the root so that when sticky header kicks in 
+    // The content on which it is appearing should be visible below it
+    rootMargin: "-80px", 
+  }
+);
+obs.observe(sectionHeroEl);
